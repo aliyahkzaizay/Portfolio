@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aliyah's Portfolio</title>
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +30,19 @@
     }
   </style>
 
+<script>
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > window.innerHeight * 0.8) { 
+        header.style.opacity = '0';
+        header.style.pointerEvents = 'none'; /* Prevent hovering */
+      } else {
+        header.style.opacity = '1';
+        header.style.pointerEvents = 'auto';
+      }
+    });
+  </script>
+
   <!-- Link to your CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -43,9 +60,9 @@
                 <!-- Nav links and social icons tg -->
                  <div class = "nav-social-container">
                     <ul class = "nav-links">
-                        <li><a href = "index.html">home</a></li>
-                        <li><a href = "about.html">about</a></li>
-                        <li> <a href = "works.html">works</a></li>
+                        <li><a href = "#home">home</a></li>
+                        <li><a href = "#about">about</a></li>
+                        <li> <a href = "#works">works</a></li>
                         <li> <a href = "assets/SWEresume.pdf" target = "_blank" class = "resume-link">resume</a></li>
                     </ul>
 
@@ -81,13 +98,69 @@
             <!-- Bottom Half of Home page -->
             <div class = "bottom-container">
 
-                <h3> Welcome to my Portfolio</h1>
+                <h3 class="wave-text">
+                    <span style="--i:1;">W</span>
+                    <span style="--i:2;">e</span>
+                    <span style="--i:3;">l</span>
+                    <span style="--i:4;">c</span>
+                    <span style="--i:5;">o</span>
+                    <span style="--i:6;">m</span>
+                    <span style="--i:7;">e</span>
+                    <span style="--i:8;"> </span>
+                    <span style="--i:9;">t</span>
+                    <span style="--i:10;">o</span>
+                    <span style="--i:11;"> </span>
+                    <span style="--i:12;">m</span>
+                    <span style="--i:13;">y</span>
+                    <span style="--i:14;"> </span>
+                    <span style="--i:15;">P</span>
+                    <span style="--i:16;">o</span>
+                    <span style="--i:17;">r</span>
+                    <span style="--i:18;">t</span>
+                    <span style="--i:19;">f</span>
+                    <span style="--i:20;">o</span>
+                    <span style="--i:21;">l</span>
+                    <span style="--i:22;">i</span>
+                    <span style="--i:23;">o</span>
+                  </h3>
 
-                <div class = "get-to-know">but first, let's get to know me.</div>
+                <div class = "get-to-know">let's get to know me first!</div>
+
+                <!-- Scroll down icon -->
+                <div class="scroll-down-container">
+                    <i class="fas fa-chevron-down scroll-down-icon"></i>
+                </div>
 
             </div>
         </div>
     </section>
+
+    <!-- About Section -->
+
+    <section id="about">
+        <div class="about-container">
+
+            <p>Write a short intro about yourself here!</p>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+
+    <section id="skils">
+        <div class="skills-container">
+            <h2>tech</h2>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+
+    <section id="works">
+        <div class="works-container">
+            <h2>My Work</h2>
+            <p>Show off your projects here!</p>
+        </div>
+    </section>
+
 
 
 </body>

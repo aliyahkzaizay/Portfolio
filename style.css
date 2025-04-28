@@ -99,8 +99,129 @@
 }
 
 
+.top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    width: 100%;
+    max-width: 1200px; /* Limit width */
+    padding: 0 20px; 
+}
 
 
+.top-container h2, .top-container h1, .top-container p {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding if any */
+}
+
+.top-container h1 {
+    font-family: 'Italiana', serif;
+    font-size: 90px;
+    color: #F4A261;
+    margin-bottom: 20px; /* Adjust margin for desired spacing */
+}
+
+.top-container p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px; /* Adjust margin for desired spacing */
+}
+
+.bottom-container h3{
+    font-size: 80px;
+    font-weight: 10;
+    display: incline-block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.wave-text span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(10px); /* Start slightly below */
+    animation: wave 1s forwards; /* Apply the wave animation */
+}
+
+@keyframes wave {
+    0% {
+        opacity: 0;
+        transform: translateY(10px); /* Initial position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}
+
+.wave-text span {
+    animation-delay: calc(0.1s * var(--i)); /* Create delay for each letter */
+}
+
+
+
+
+
+.get-to-know {
+    font-size: 20px ;
+    text-align: center;
+}
+
+
+/* Responsive Design Adjustments */
+@media screen and (max-width: 768px) {
+    .top-container h1 {
+        font-size: 60px; /* Reduce the font size on smaller screens */
+    }
+
+    .bottom-container h3 {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+/* Style for the scroll-down icon container */
+.scroll-down-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust if needed for spacing */
+}
+/* Style for the scroll-down icon */
+.scroll-down-icon {
+   
+    animation: bounce 1.5s ease-in-out infinite; /* Animation for the bouncing effect */
+}
+
+/* Keyframes for the bounce animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); /* Move it down */
+    }
+    100% {
+        transform: translateY(0); /* Return to original position */
+    }
+}
+
+
+/* About Section */
+
+#about{
+    background-image: url('assets/aboutBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+
+}
 
 
 
