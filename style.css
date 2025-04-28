@@ -219,8 +219,71 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    
+    padding:10px;
 
+
+}
+
+#about .about-container{
+    text-align: left;
+    margin: 0 auto;
+}
+
+#about .top-container{
+    text-align: left;
+}
+
+
+/* Who is She  */
+#about h1{
+    color: black;
+    text-align: left ;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+    padding-right: 710px;
+
+}
+
+#about .highlight{
+    color: #FAF3E0;
+}
+
+/* Education */
+#about h2{
+    color: #FAF3E0;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 40px;
+    margin-top: 10px;
+    padding: 0;
+
+}
+
+/* school listing*/
+#about ul li{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #FAF3E0;
+    font-size: 20px;
+    margin-bottom: 6%;
+}
+
+#about .bottom-container{
+    margin-top: -50px;
+
+}
+
+/* About Description*/
+#about p{
+    text-align: left;
+    line-height: 1.6;
+}
+#about .text-box {
+    max-width: 500px; /* Controls the width of the text box */
+    margin: 0 auto;   /* Centers the text box horizontally */
+    margin-left: 20px;
+    text-align: left; /* Keeps text aligned to the left */
+    padding: 0px;
 }
 
 
