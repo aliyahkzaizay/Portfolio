@@ -286,6 +286,27 @@
     padding: 0px;
 }
 
+/*Tech Section */
+
+#skills{
+    background-image: url('assets/creamBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding:10px;
+}
+
+/*Works Section */
+
+#works{
+    background-image: url('assets/creamBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding:10px;
+}
 
 
 
