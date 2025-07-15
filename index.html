@@ -81,12 +81,9 @@
         <div class='bubble bubble-28'></div>
         <div class='bubble bubble-29'></div>
         <div class='bubble bubble-30'></div>
-      </div>
-      <div class='credits'>
-        <a href='https://codepen.io/marko-zub/' target='_blank'>
-          My other codepens
-        </a>
-      </div>
+    
+    </div>
+      
       
 
 
@@ -167,9 +164,11 @@
                 <div class = "get-to-know">let's get to know me first!</div>
 
                 <!-- Scroll down icon -->
+               
                 <div class="scroll-down-container">
-                    <i class="fas fa-chevron-down scroll-down-icon"></i>
-                </div>
+                        <i id ="scrollDownBtn" class="fas fa-chevron-down scroll-down-icon"></i>
+                </div>   
+                
 
             </div>
         </div>
@@ -187,10 +186,7 @@
                 <div class = "text-box">
 
                     <p>Heyy! I’m Aliyah Zaizay, a Computer Science & Graphic Design 
-                        student with a passion for DevOps, Full-Stack, and automation engineering. 
-                        I love crafting <strong>aesthetic</strong> yet 
-                        <strong>functioning</strong> interfaces bringing my creative ideas to life 
-                        through code.</p>
+                        student with a passion for DevOps, Full-Stack, and automation engineering.</p>
 
                     <p> Currently, I’m focused on web design and back-end development while continuously improving my front-end skills to become a well-rounded Full Stack Developer.</p>
                     <p> Outside of coding and designing, I enjoy exploring the outdoors, growing in my faith, and discovering new music. My goal? To seamlessly blend technology and design to make life a little easier (and prettier ✨) </p>
@@ -227,6 +223,13 @@
         </div>
     </section>
 
-
+<script>
+        document.getElementById('scrollDownBtn').addEventListener('click', () => {
+          window.scrollBy({
+            top: window.innerHeight,
+            behavior: 'smooth',
+          });
+        });
+</script>
 
 </body>
