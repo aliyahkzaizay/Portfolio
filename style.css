@@ -295,9 +295,9 @@ html {
     padding: 0px;
 }
 
-/*Tech Section */
+/*Project Section */
 
-#skills{
+#projects{
     background-image: url('assets/creamBackground.png');
     background-size: cover;
     background-position: center;
@@ -306,14 +306,71 @@ html {
     padding:10px;
 }
 
-#skills h1{
+#projects h1{
 
     font-family: 'Italiana', serif; 
     font-weight: 0px;
     
+}
 
+#projects p{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  width: 250px;
+  height: auto;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-title{
+  margin-top: 0.5rem;
+  font-size: 25px;
+  font-weight: 600;
+  
 
 }
+
+/*defualt tilt*/
+.card:nth-child(1) {
+  transform: rotate(-5deg);
+}
+
+.card:nth-child(2) {
+  transform: rotate(0deg);
+}
+
+.card:nth-child(3) {
+  transform: rotate(5deg);
+}
+
+/*hover efect*/
+.card:hover {
+  transform: scale(1.05) rotate(0deg);
+  z-index:1;
+}
+
+/*On click card comes to the front*/
+.card.focused {
+  transform: rotate(0deg) scale(1.1);
+  z-index: 10;
+}
+
+
 
 /*Works Section */
 
@@ -941,3 +998,5 @@ body {
     transform: translate(-62vw, -65vh);
   }
 }
+
+
