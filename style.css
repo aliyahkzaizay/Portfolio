@@ -221,7 +221,7 @@ html {
 
 #about{
     scroll-margin-top: 120px;
-    background-image: url('assets/aboutBackground.png');
+    background-image: url('assets/aboutBack.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -298,7 +298,7 @@ html {
 /*Project Section */
 
 #projects{
-    background-image: url('assets/creamBackground.png');
+    background-image: url('assets/PBack.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -310,7 +310,13 @@ html {
 
     font-family: 'Italiana', serif; 
     font-weight: 0px;
+    color: black;
+    text-align: left ;
+    margin: 0 auto;
+    padding: 0;
+    margin-left: 20px;
     
+
 }
 
 #projects p{
